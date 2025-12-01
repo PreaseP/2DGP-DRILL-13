@@ -24,5 +24,4 @@ class Ball:
         return self.x - self.image.w // 2, self.y - self.image.h // 2, self.x + self.image.w // 2, self.y + self.image.h // 2
 
     def handle_collision(self, group, other):
-        if group == 'boy:ball':
-            game_world.remove_object(self)
+        pass
