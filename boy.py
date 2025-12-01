@@ -147,7 +147,11 @@ class Boy:
 
 
     def draw(self):
+        sx = self.x - common.court.window_left  # 화면상의 x 위치
+        sy = self.y - common.court.window_bottom
+
         self.state_machine.draw()
+        self.font.draw(sx - 75, sy + 60, f'ball count = {self.ball_count}', (255, 255, 0))
 
     # fill here
     def get_bb(self):
