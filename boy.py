@@ -7,7 +7,6 @@ import game_framework
 
 from state_machine import StateMachine
 
-
 def space_down(e):  # e is space down ?
     return e[0] == 'INPUT' and e[1].type == SDL_KEYDOWN and e[1].key == SDLK_SPACE
 
